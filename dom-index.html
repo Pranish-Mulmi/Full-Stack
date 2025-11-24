@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pranish  Portfolio</title>
+  <link rel="stylesheet" href="dom-styles.css" />
+</head>
+<body>
+
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <header id="hero">
+    <video autoplay loop muted playsinline id="video-background">
+      <source src="background-loop.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <nav class="navbar" aria-label="Main navigation">
+
+      <!-- <span class="logo">Pranish</span> -->
+
+      <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+        
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <img class="ma"src="me.enc">
+
+    <div class="hero-content">
+      <h1>Pranish</h1>
+      <p>Frontend Developer & UI/UX Enthusiast</p>
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>
+        I’m a hands-on developer who loves clean design systems, accessible interfaces, and performant code.
+        I build responsive web apps with attention to detail and a focus on real-world usability.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="skills-row">
+        <div class="skill-card" role="listitem">
+          <span class="skill-icon">🟦</span>
+          <span class="skill-name">HTML5</span>
+        </div>
+        <div class="skill-card" role="listitem">
+          <span class="skill-icon">🟨</span>
+          <span class="skill-name">CSS3 (Flexbox & Grid)</span>
+        </div>
+        <div class="skill-card" role="listitem">
+          <span class="skill-icon">🟩</span>
+          <span class="skill-name">JavaScript (DOM)</span>
+        </div>
+        <div class="skill-card" role="listitem">
+          <span class="skill-icon">🟥</span>
+          <span class="skill-name">Responsive Design(UI/UX)</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div id="projects-grid">
+        <article class="project-card">
+          <h3>PROJECT 1</h3>
+          <p>My First Project.</p>
+          <a href="#" class="btn btn-outline" aria-label="Open Landing Page project">Open</a>
+        </article>
+        <article class="project-card">
+          <h3>PROJECT 2</h3>
+          <p>My Second Project.</p>
+          <a href="#" class="btn btn-outline" aria-label="Open Portfolio Theme project">Open</a>
+        </article>
+        <article class="project-card">
+          <h3>PROJECT 3</h3>
+          <p>My Third Project.</p>
+          <a href="#" class="btn btn-outline" aria-label="Open Interactive Components project">Open</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <form id="contact-form-id" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+          <small class="error" id="error-name" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <small class="error" id="error-email" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea>
+          <small class="error" id="error-message" aria-live="polite"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+        <div id="form-message" role="status" aria-live="polite"></div>
+      </form>
+
+      <!-- <audio id="ui-sound" preload="auto">
+        <source src="click.mp3" type="audio/mpeg" />
+      </audio>
+      <button type="button" class="btn btn-outline" id="play-sound" aria-label="Play UI sound">Play sound</button> -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Pranish. All rights reserved.</p>
+  </footer>
+
+  <script src="dom-script.js"></script>
+</body>
+</html>
