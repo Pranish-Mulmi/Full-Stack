@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input, button {
+  margin: 5px 0;
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.movie-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+
+.movie-item p {
+  margin: 0;
+}
+
+.movie-item button {
+  margin-right: 10px;
+  background-color: #008CBA;
+}
+
+.movie-item button:last-child {
+  background-color: #f44336;
+}
